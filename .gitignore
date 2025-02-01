@@ -1,18 +1,77 @@
-/.phpunit.cache
-/node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/vendor
+# Editor configuration files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.sln
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Laravel specific files/folders
+bootstrap/cache/*
+config/jwt.php  # Contoh: Jika Anda menggunakan JWT, tambahkan ini
+database/*.sqlite # Jika Anda menggunakan SQLite
+node_modules/
+public/build
+public/hot
+storage/*.key
+storage/app/*
+storage/debugbar/*
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+tests/_output/*
+vendor/
+
+# Environment files
 .env
 .env.backup
 .env.production
-Homestead.json
-Homestead.yaml
-auth.json
-npm-debug.log
-yarn-error.log
-/.fleet
-/.idea
-/.vscode
+
+# Package Managers
+composer.lock
+package-lock.json
+yarn.lock
+
+# Deployment specific files/folders
+# .ebextensions/  (Jika Anda menggunakan AWS Elastic Beanstalk)
+# config/deploy.php (Jika Anda memiliki file konfigurasi deployment)
+
+# Temporary files
+*.swp
+*~
+.tmp*
+*.bak
+*.log
+*.dump
+
+# Personal files/folders
+.ssh/*
+.htpasswd
+
+# Laravel Mix
+*.css.map
+*.js.map
+public/mix-manifest.json
+
+# Vite
+.vite
+
+# Docker
+docker-compose.override.yml  (Jika Anda menggunakan Docker Compose)
+
+# Testing
+*.test
+
+# Build Artifacts
+*.phar
+
+# Miscellaneous
+.phpunit.cache
+*.zip
+*.rar
+*.tar
+*.gz

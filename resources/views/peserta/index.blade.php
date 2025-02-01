@@ -3,7 +3,6 @@
 @section('title', 'Peserta')
 
 @section('content')
-    <h1>Daftar Peserta</h1>
     <a href="{{ route('peserta.create') }}" class="btn btn-primary mb-3">Tambah Peserta</a>
 
     @if (session('success'))

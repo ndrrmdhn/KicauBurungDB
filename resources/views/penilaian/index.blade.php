@@ -4,8 +4,6 @@
 
 @section('content')
 <div class="container">
-    <h2 class="mb-4">Daftar Penilaian</h2>
-    
     <a href="{{ route('penilaian.create') }}" class="btn btn-primary mb-3">Tambah Penilaian</a>
 
     @if(session('success'))
